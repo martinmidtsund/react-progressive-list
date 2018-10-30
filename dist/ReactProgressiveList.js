@@ -188,7 +188,7 @@ var _initialiseProps = function _initialiseProps() {
       top = boundingClientRect.top;
       height = boundingClientRect.height;
       scrollHeight = window.innerHeight;
-      reachedLimit = top + height < scrollHeight;
+      reachedLimit = top + height <= scrollHeight;
     } else {
       top = e.target.scrollTop;
       height = e.target.offsetHeight;
